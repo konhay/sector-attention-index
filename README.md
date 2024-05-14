@@ -10,8 +10,7 @@ For Chinese stock market, we define SAI (Sector Attention Index) to quantify the
 Key words: Sector Investor Attention, Sentiment Analysis, Alternative Data, Chinese Stock Market, Deep Learning
 
 ## guba
-This package is built for getting retail investor post data from [*EasyMoney Stock Forum*](https://guba.eastmoney.com/). It provides text data preprocessing functions and advanced NLP methods based on deep learning. It also supports sentiment marking through word segmentation technology.
-
+This package is built for getting retail investor post data from [*EasyMoney*](https://guba.eastmoney.com/) Stock Forum. It provides text data preprocessing, sentiment marking and other advanced NLP functions.
 ##### Get post data
 
 We will develop a web crawler program to collect retail investor posts in Eastmoney’s stock forum and insert them into database. For sector and component information, we also need to execute a separate program (*package sector*) to collect sector list and constituent stock list.
