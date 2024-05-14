@@ -11,22 +11,22 @@ Key words: Sector Investor Attention, Sentiment Analysis, Alternative Data, Chin
 
 ## guba
 This package is built for getting retail investor post data from [*EasyMoney*](https://guba.eastmoney.com/) Stock Forum. It provides text data preprocessing, sentiment marking and other advanced NLP functions.
-##### Get post data
+#### Get Text data
 
 We will develop a web crawler program to collect retail investor posts in Eastmoney’s stock forum and insert them into database. For sector and component information, we also need to execute a separate program (*package sector*) to collect sector list and constituent stock list.
 
-##### Text data preprocessing
+#### Data preprocessing
 
 We need delete posts that do not meet the requirements, including those that are suspected of advertising and those that are too short. We adopt [*Jieba*](https://github.com/fxsjy/jieba) tokenizer for word segmentation. *Jieba* tokenizer is a highly effective Chinese segmentation device that supports multiple segmentation modes. 
 
 In order to adapt to the embedding layer of AI model, We make all sequences equal length by cutting them or adding zeros at the end. We will fix the length of all posts to 40 characters. This step can be achieved through the methods provided by [*Keras*](https://keras.io/), an open-source artificial neural network library written in Python.
 
-##### Available pre-trained resource
+#### Available pre-trained resource
 
 Pre-trained models or algorithms publicly disclosed by some AI giants (e.g. Tencent and Baidu) will help us improve the efficiency of NLP tasks for Chinese text. We will choose some of these including kinds of 1) Pre-trained models which can complete typical sentiment analysis tasks such as Sentence-level Sentiment Classification and Aspect-level Sentiment Classification. 2) Embedding corpora for Chinese words and phrases which provide finite-dimensional vector representations, a.k.a. embeddings, for Chinese words. We will introduce these pre-trained models to build our word embedding layer and BiLSTM layer, after finetuning them to suit our stock analysis scenarios. We have tried some of these and gives examples in `nlp_processor.py`, such as [*Tencent AI Lab Embedding Corpora*](https://ai.tencent.com/ailab/nlp/en/embedding.html), [*Baidu SKEP*](https://github.com/baidu/Senta), etc. It will provide support for us to finish the classification task for sentiment SAI and to build the *BiLSTM-CNN-Attention* model in the research proposal.
 
 ## sector
-This package is built to collecting basic information and daily market data for [*RoyalFlush Sectors*](https://q.10jqka.com.cn/thshy/) (bk).
+This package is built to collecting basic information and daily market data for [*RoyalFlush*](https://q.10jqka.com.cn/thshy/) Sectors (bk).
 
 TableName: finance.bk_info
 
