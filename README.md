@@ -1,7 +1,7 @@
 # Sector Attention Index
 ## Introduction
 
-This open source project is specifically built for the research proposal: ***Estimating sector attention index with deep learning methods : example of Chinese stock market***, *Jan. 4, 2024, konhay@163.com*.
+This open source project is specifically built for the research proposal: ***Estimating sector attention index with deep learning methods : example of Chinese stock market***, *Jan. 4, 2024, Bing Han*. ([*Download*](https://konhay.github.io/docs/04_Sector_Attention_Index_in_Chinese_stock_market.pdf))
 
 Abstract
 
